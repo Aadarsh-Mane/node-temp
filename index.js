@@ -8,7 +8,7 @@ app.use(express.json());
 const PORT=5000;
 import userRoutes from './routes/users.js'
 app.get('/', (req, res) => {
-    console.log("hello world")
+    console.log("hello ")
 });
 app.use('/',userRoutes)
 
