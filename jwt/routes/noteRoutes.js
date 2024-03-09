@@ -6,8 +6,8 @@ const noteRouter=express.Router()
 
 
 noteRouter.get("/",auth,getNotes)
-noteRouter.post("/",auth,createNote)
-noteRouter.put("/:id",auth,updateNote)
+noteRouter.post("/add",auth,createNote)
+noteRouter.put("/update/:id",auth,updateNote)
 noteRouter.delete("/:id",auth,deleteNote)
 
 noteRouter.post("signin",(req,res)=>{
